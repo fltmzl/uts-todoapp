@@ -1,0 +1,90 @@
+body {
+  min-height: 100vh;
+  color: $black;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+}
+
+h4 {
+  font-size: $h4;
+}
+
+h5 {
+  font-size: $h5;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+main {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.nav-active {
+  background-color: $secondaryBlue !important;
+  color: $primaryBlue !important;
+
+  svg {
+    fill: $primaryBlue !important;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darken($color: #bbb, $amount: 10);
+}
+
+::placeholder {
+  color: lighten($color: $primaryGray, $amount: 30);
+  opacity: 1; /* Firefox */
+}
